@@ -1,0 +1,40 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+header {
+    padding-bottom: 30px ;
+    padding-top: 10px;
+}
+
+
+/*Making rounded borders based off the code from
+    https://www.w3schools.com/css/css3_borders.asp */
+.border {
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+    border: 2px solid #dddddd;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 700px;
+    height: 250px;
+}
+
+.text{
+    display: inline-block;
+    padding: 0rem, 9rem;
+    text-align:left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight:bold;
+
+  }
+
+  .icon {
+    display: inline-block;
+    padding: rem 9rem;
+    vertical-align: middle;
+
+  }
