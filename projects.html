@@ -5,74 +5,86 @@
 WRITTEN BY: Alice Tran
 EMAIL: alicet5@uci.edu
 -->
-
 <head>
   <meta charset="utf-8">
-  <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
   <meta name="author" content="Alice Tran">
-  <meta name="description" content="This page shows my projects.">
-   <!-- you would link to an external stylesheet here! -->
-   <link href="projects.css" rel="stylesheet" type="text/css"/>
-   <style>
+  <meta name="description" content="This is the main page.">
+  <!-- you would link to an external stylesheet here! -->
+  <link href="mainstyle.css" rel="stylesheet" type="text/css">
+  <!--Fonts-->
+  <script src="https://kit.fontawesome.com/8f862897bc.js" crossorigin="anonymous"></script>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
   </style>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-  </style>
-
-  <script src="https://kit.fontawesome.com/8f862897bc.js" crossorigin="anonymous"></script>
+  
    <!-- you would also link to Bootstrap here! -->
-   <link rel=”stylesheet” href=”css/bootstrap.css”>
-   <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
-   <link href="bootstrap.min.css" rel="stylesheet"/>
-   <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 
-   <!-- jQuery library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
- 
-   <!-- Latest compiled JavaScript -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel=”stylesheet” href=”css/bootstrap.css”>
+  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <title>Projects</title>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Alice's Website Portfolio</title>
 </head>
+
 <body>
-
-     <!--Navbar by Bootstrap-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">Menu</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Main <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="aboutme.html">About Me</a>
-        <a class="nav-item nav-link" href="projects.html">Projects</a>
-      </div>
+  
+<!--Using Bootstraps Gridsystem
+https://getbootstrap.com/docs/4.0/layout/grid/-->
+  <div class="container">
+    <div class="row justify-content-center">
+       <!--Bootstraps Navbar
+      https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Main <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="aboutme.html">About Me</a>
+            <a class="nav-item nav-link" href="projects.html">Projects</a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+    
+    <div class="row">
+      <header>
+        <h1>My Projects</h1>
+      </header>
+      <section class="border">
+        <h2>Wordle</h2>
+        <p class="text"> In early 2022, Wordle started to gain more interest, including mine. Taking only introduction courses
+          in CS at the time, I decided to put my newly developed skills to use by programming this game in C++. This runs on the debug console
+          and is just a rough implementation of how the game works and not the GUI.
+          This project definitely needs touching up still but it shows what I was able to do as I was just starting out in computer science.
+    
+        </p>
+    
+        <div class="icon">
+            <a href="https://www.nytimes.com/games/wordle/index.html"><img src="images/alpha-wordle-icon-new-square320-v3.webp" alt="Wordle icon"
+            height="50"</a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/alicetran1221/wordleproject" style="color:dimgrey" title:"Wordle"><span class="fa-brands fa-github fa-2x"></span> Github</a>
+        </div>
+      </section>
 
-  <header>
-    <h1>My Projects</h1>
-  </header>
-  <section class="border">
-    <h2>Wordle</h2>
-    <p class="text"> In early 2022, Wordle started to gain more interest, including mine. Taking only introduction courses
-      in CS at the time, I decided to put my newly developed skills to use by programming this game in C++. This runs on the debug console
-      and is just a rough implementation of how the game works and not the GUI.
-      This project definitely needs touching up still but it shows what I was able to do as I was just starting out in computer science.
-
-    </p>
-
-    <div class="icon">
-        <a href="https://www.nytimes.com/games/wordle/index.html"><img src="images/alpha-wordle-icon-new-square320-v3.webp" alt="Wordle icon"
-        height="50"</a>
     </div>
-    <div class="icon">
-      <a href="https://github.com/alicetran1221/wordleproject" style="color:darkgray"><i class="fa-brands fa-github fa-2x"></i></a>
-    </div>
-  </section>
+  </div>
+
+    
+     
+
+  
 
 
 </body>

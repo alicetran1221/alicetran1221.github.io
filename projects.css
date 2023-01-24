@@ -3,14 +3,12 @@ html {
     text-align: center;
 }
 
-header {
-    padding-bottom: 30px ;
+h1{
+    padding-bottom: 3px ;
     padding-top: 10px;
 }
 
 
-/*Making rounded borders based off the code from
-    https://www.w3schools.com/css/css3_borders.asp */
 .border {
     margin: auto;
     margin-bottom: 3rem;
