@@ -9,7 +9,7 @@ EMAIL: alicet5@uci.edu
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
   <meta name="author" content="Alice Tran">
-  <meta name="description" content="This is the main page.">
+  <meta name="description" content="This shows project(s) I have worked on.">
   <!-- you would link to an external stylesheet here! -->
   <link href="mainstyle.css" rel="stylesheet" type="text/css">
   <!--Fonts-->
@@ -37,6 +37,7 @@ EMAIL: alicet5@uci.edu
   
 <!--Using Bootstraps Gridsystem
 https://getbootstrap.com/docs/4.0/layout/grid/-->
+
   <div class="container">
     <div class="row justify-content-center">
        <!--Bootstraps Navbar
@@ -55,37 +56,35 @@ https://getbootstrap.com/docs/4.0/layout/grid/-->
         </div>
       </nav>
     </div>
+
+  <header>
+    <h1>My Projects</h1>
+  </header>
     
+  <section class="border">
     <div class="row">
-      <header>
-        <h1>My Projects</h1>
-      </header>
-      <section class="border">
-        <h2>Wordle</h2>
+      <div class="col">
+        <div>
+          <a><img src="images/alpha-wordle-icon-new-square320-v3.webp" alt="Wordle icon"
+            height="100"> <h2>Wordle</h2></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
         <p class="text"> In early 2022, Wordle started to gain more interest, including mine. Taking only introduction courses
           in CS at the time, I decided to put my newly developed skills to use by programming this game in C++. This runs on the debug console
           and is just a rough implementation of how the game works and not the GUI.
           This project definitely needs touching up still but it shows what I was able to do as I was just starting out in computer science.
     
         </p>
-    
         <div class="icon">
-            <a href="https://www.nytimes.com/games/wordle/index.html"><img src="images/alpha-wordle-icon-new-square320-v3.webp" alt="Wordle icon"
-            height="50"</a>
+          <a href="https://github.com/alicetran1221/wordleproject" style="color:dimgrey"><span class="fa-brands fa-github fa-2x"></span> Github</a>
         </div>
-        <div class="icon">
-          <a href="https://github.com/alicetran1221/wordleproject" style="color:dimgrey" title:"Wordle"><span class="fa-brands fa-github fa-2x"></span> Github</a>
-        </div>
-      </section>
-
+      </div>
     </div>
+    </section>
   </div>
-
-    
-     
-
-  
-
 
 </body>
 </html>
